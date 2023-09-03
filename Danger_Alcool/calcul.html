@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+	<html lang="fr">
+		<head>
+            <meta charset="utf-8" />
+            <link rel="stylesheet" href="style.css">
+            <title>Alcool dans le Sang</title>
+            <script src="calcul.js"></script>
+		</head>
+		<body>
+            <header>
+                <h1>Alcool dans le sang : le calcul d’alcoolémie</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="Introduction.html">Introduction</a></li>
+                    <li><a href="Préambule.html">Préambule</a></li>
+                    <li><a href="SituationActuel.html">Situation Actuel</a></li>
+                    <li><a href="Effets.html">Effets</a>
+                        <ul>
+                            <li> <a href="Parcours.html">Le parcours de l'alcool dans le corps</a> </li>
+                            <li> <a href="effetsCourt.html">Les effets de l'alcool à court terme </a> </li>
+                            <li> <a href="effetsLong.html"> Les effets de l'alcool à long terme </a>  </li>
+                            <li> <a href="dangers.html"> Les dangers de l'alcool pendant la grossesse </a> </li>
+                        </ul></li>
+                    <li><a href="calcul.html">Calcul d’alcoolémie</a></li>
+                </ul>
+            </nav>
+            <section>
+                <p>
+                    On désigne par Alcoolémie la quantité d’alcool présente dans le sang généralement exprimée 
+                    en France en gramme par Litre de sang (g/L). La formule pour calculer l’alcool dans le sang varie 
+                    s’il s’agit d’un homme ou d’une femme. Notez bien que la formule exprimée dans cet article décrit une approximation du taux, 
+                    le fait de manger ou de boire vite peut modifier la taux maximum observé dans le sang ce que nous avions vu en évoquant 
+                    le temps pour éliminer l’alcool. Pour rappel, la limite légale 
+                    d’alcoolémie est de 0,5g/L pour un permis définitif.
+                </p>
+                <h2>Savoir votre taux ?</h2>
+                <h3>Taux pour Homme :</h3>
+                <form>
+                    <p>
+                        Entrer vos informations : <br>
+                        Volume bu (ml) :
+                        <input type="number" name="V" min="0">
+                    <br>
+                        Degré alcool :
+                        <input type="number" name="t" min="0">
+                    <br>
+                        Votre masse (kg) :
+                        <input type="number" name="m" min="0">
+                    <br>
+                    <input type="button" value="Calculer" onclick="taux_homme(V.value,t.value,m.value)">
+                    </p>
+                </form>
+            <hr>
+                <h3>Taux pour Femme :</h3>
+                <form>
+                    <p>
+                        Entrer vos informations : <br>
+                        Volume bu (ml) :
+                        <input type="number" name="V" min="0">
+                    <br>
+                        Degré alcool :
+                        <input type="number" name="t" min="0">
+                    <br>
+                        Votre masse (kg) :
+                        <input type="number" name="m" min="0">
+                    <br>
+                    <input type="button" value="Calculer" onclick="taux_femme(V.value,t.value,m.value)">
+                    </p>
+                </form>
+            </section>
+            <footer>
+                <pre>Pour savoir : "Qui sommes nous?" cliquer sur : <a href="Source.html">à propos</a></pre>
+                <p><img src="html.png" alt="Html_valider"> <img src="vcss.gif" alt="CSS_valider"></p>
+			</footer>
+        </body>
+    </html>

@@ -1,0 +1,100 @@
+/****Mise en place****/
+body {
+	margin-left:60px;
+	border:1px solid gray;
+	background-image: url(spirale.gif);
+	background-repeat: repeat-y;
+	}
+header {
+	background-color: black;	
+	clear:both;
+	}	
+footer {
+	border:5px solid red;
+}
+section {
+	border-left:1px solid gray;
+	padding-left:3px;
+	width:auto;
+}
+/****Mise en place****/
+
+/****Alégement du sommaire****/
+nav {
+	border:5px solid grey;	
+	width:180px;
+	margin:0px;
+	padding:1em; /* marge interne : taille d'un caractÃ¨re */
+	font-size:70%;
+}
+nav li li {
+	display:none;
+  }
+  
+  nav li:hover {
+	background:#f0f0f0;
+  }
+  nav li:hover li:hover {
+	background:#f0f0f0;
+  }
+  nav li:hover li {
+	display:list-item;
+	background:#ffffff;
+  }
+/****Alégement du sommaire****/
+
+/****Police et caractère****/
+h1 {
+	color: whitesmoke;
+	text-decoration: underline;
+}
+h2 {
+	background-color:yellow;
+	text-decoration: underline;
+}
+p:first-letter {
+	font-size:300%;
+	color:blue;
+	}
+pre {
+	font-size: large;
+}
+/****Police et caractère****/
+
+/****Décoration du tableau****/
+table {
+	border:3px solid rgb(100, 149, 237);
+	border-collapse:collapse;
+	width:90%;
+	margin:auto;
+	}
+	thead, tfoot {
+	background-color:rgb(208, 227, 250);
+	background-image:url(sky.jpg);
+	border:1px solid rgb(100, 149, 237);
+	}
+	tbody {
+	background-color:white;
+	border:1px solid rgb(100, 149, 237);
+	}
+	th {
+	font-family:monospace;
+	border:1px dotted rgb(100, 149, 237);
+	padding:5px;
+	background-color:#EFF6FF;
+	width:25%;
+	}
+	td {
+	font-family:sans-serif;
+	font-size:80%;
+	border:1px solid rgb(100, 149, 237);
+	padding:5px;
+	text-align:left;
+	}
+	caption {
+	font-family:sans-serif;
+	color: red;
+	font-size: large;
+	text-decoration: underline;
+	}
+/****Décoration du tableau****/
